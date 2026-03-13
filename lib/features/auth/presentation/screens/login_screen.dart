@@ -42,12 +42,12 @@ class _LoginScreenState extends ConsumerState<LoginScreen>
           // Background grid pattern
           Positioned.fill(child: _BackgroundGrid()),
           // Glow orbs
-          Positioned(
+          const Positioned(
             top: -100,
             right: -80,
             child: _GlowOrb(color: AppColors.accentGreen, size: 300),
           ),
-          Positioned(
+          const Positioned(
             bottom: 100,
             left: -100,
             child: _GlowOrb(color: AppColors.accentBlue, size: 250),

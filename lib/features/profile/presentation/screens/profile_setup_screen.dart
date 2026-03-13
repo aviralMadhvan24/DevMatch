@@ -35,7 +35,7 @@ class _ProfileSetupScreenState extends ConsumerState<ProfileSetupScreen> {
         actions: [
           TextButton(
             onPressed: () => context.go('/discovery'),
-            child: Text(
+            child: const Text(
               'Skip',
               style: TextStyle(color: AppColors.textSecondary, fontSize: 14),
             ),
@@ -76,7 +76,7 @@ class _ProfileSetupScreenState extends ConsumerState<ProfileSetupScreen> {
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           colors: [AppColors.bgCard, AppColors.bgSurface],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -190,7 +190,7 @@ class _ProfileSetupScreenState extends ConsumerState<ProfileSetupScreen> {
                 color: AppColors.accentGreen.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: Text(
+              child: const Text(
                 'AI analyzed',
                 style: TextStyle(
                   fontSize: 10,
@@ -394,7 +394,7 @@ class _SkillBar extends StatelessWidget {
         const SizedBox(width: 10),
         Text(
           '${(skill.proficiency * 100).round()}%',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 12,
             fontWeight: FontWeight.w600,
             color: AppColors.textSecondary,

@@ -449,7 +449,7 @@ class _GuideTab extends ConsumerWidget {
               child: const Icon(Icons.auto_awesome_rounded, size: 14, color: AppColors.accentPurple),
             ),
             const SizedBox(width: 8),
-            Text(
+            const Text(
               'AI GENERATED GUIDE',
               style: TextStyle(
                 fontSize: 10,
@@ -537,7 +537,7 @@ class _MarkdownContent extends StatelessWidget {
                 width: 4,
                 height: 4,
                 margin: const EdgeInsets.fromLTRB(4, 8, 8, 0),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   color: AppColors.textMuted,
                 ),
@@ -788,7 +788,7 @@ class _StatPill extends StatelessWidget {
         const SizedBox(width: 4),
         Text(
           value,
-          style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.textSecondary),
+          style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.textSecondary),
         ),
       ],
     );
