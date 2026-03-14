@@ -244,7 +244,7 @@ class _DiscoveryScreenState extends ConsumerState<DiscoveryScreen> {
                 borderRadius: BorderRadius.circular(12),
                 border: Border.all(color: AppColors.accentGreen),
               ),
-              child: Text(
+              child: const Text(
                 'Refresh Recommendations',
                 style: TextStyle(color: AppColors.accentGreen, fontWeight: FontWeight.w600),
               ),

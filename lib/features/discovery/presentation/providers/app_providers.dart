@@ -193,7 +193,7 @@ final contributionGuideProvider =
 ### Getting Started
 1. Fork the repository to your GitHub account
 2. Clone your fork locally: `git clone https://github.com/YOUR_USERNAME/REPO`
-3. Create a new branch: `git checkout -b fix/issue-${issueId}`
+3. Create a new branch: `git checkout -b fix/issue-$issueId`
 
 ### Understanding the Issue
 This issue requires you to implement changes across multiple components. The AI analysis suggests starting with the core utility functions before modifying the UI layer.

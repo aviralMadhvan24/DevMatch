@@ -67,7 +67,7 @@ class SavedIssuesScreen extends ConsumerWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.bookmark_outline_rounded, size: 64, color: AppColors.textMuted)
+          const Icon(Icons.bookmark_outline_rounded, size: 64, color: AppColors.textMuted)
               .animate().fadeIn(),
           const SizedBox(height: 16),
           Text('No saved issues yet', style: Theme.of(context).textTheme.titleMedium),

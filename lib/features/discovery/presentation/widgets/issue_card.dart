@@ -70,8 +70,8 @@ class IssueCard extends StatelessWidget {
   Widget _buildHeader() {
     return Container(
       padding: const EdgeInsets.fromLTRB(20, 20, 20, 16),
-      decoration: BoxDecoration(
-        borderRadius: const BorderRadius.only(
+      decoration: const BoxDecoration(
+        borderRadius: BorderRadius.only(
           topLeft: Radius.circular(24),
           topRight: Radius.circular(24),
         ),
@@ -175,11 +175,11 @@ class IssueCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          const Row(
             children: [
-              const Icon(Icons.auto_awesome_rounded,
+              Icon(Icons.auto_awesome_rounded,
                   size: 12, color: AppColors.accentPurple),
-              const SizedBox(width: 6),
+              SizedBox(width: 6),
               Text(
                 'AI SUMMARY',
                 style: TextStyle(
@@ -237,7 +237,7 @@ class IssueCard extends StatelessWidget {
         const Spacer(),
         Text(
           '#${issue.issueNumber}',
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 12,
             color: AppColors.textMuted,
             fontFamily: 'monospace',

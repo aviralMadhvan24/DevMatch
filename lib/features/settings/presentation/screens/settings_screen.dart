@@ -59,7 +59,7 @@ class SettingsScreen extends ConsumerWidget {
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
-            gradient: LinearGradient(
+            gradient: const LinearGradient(
               colors: [AppColors.bgCard, AppColors.bgSurface],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -74,7 +74,7 @@ class SettingsScreen extends ConsumerWidget {
                 height: 72,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(36),
-                  gradient: LinearGradient(
+                  gradient: const LinearGradient(
                     colors: [
                       AppColors.accentGreen,
                       AppColors.accentBlue,
@@ -163,7 +163,7 @@ class SettingsScreen extends ConsumerWidget {
                 borderRadius: BorderRadius.circular(20),
                 color: AppColors.accentPurple.withOpacity(0.1),
               ),
-              child: Text(
+              child: const Text(
                 'AI analyzed',
                 style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600, color: AppColors.accentPurple),
               ),
