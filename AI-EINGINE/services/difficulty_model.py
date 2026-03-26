@@ -78,8 +78,11 @@ def train_model():
     model.fit(X, labels)
 
 # Train at startup
-train_model()
+#train_model()
 
 def predict_difficulty(text):
+    return "Medium"
+
+'''def predict_difficulty(text):
     X_input = vectorizer.transform([text])
-    return model.predict(X_input)[0]
+    return model.predict(X_input)[0]'''
