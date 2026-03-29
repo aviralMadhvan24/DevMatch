@@ -67,3 +67,7 @@ build/web/
 
 *.swp
 *.lock
+
+#
+__pycache__/
+*.pyc

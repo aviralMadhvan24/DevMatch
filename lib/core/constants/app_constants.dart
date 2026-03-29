@@ -1,5 +1,5 @@
 class AppConstants {
-  static const String baseUrl = 'https://api.gitforge.dev/v1';
+  static const String baseUrl = 'http://127.0.0.1:8000/v1';
   static const String githubOAuthUrl = 'https://github.com/login/oauth/authorize';
   static const String githubClientId = 'YOUR_GITHUB_CLIENT_ID';
   static const String jwtStorageKey = 'jwt_token';

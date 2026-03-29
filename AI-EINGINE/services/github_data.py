@@ -19,7 +19,7 @@ def fetch_issues():
         labels = [l["name"] for l in item.get("labels", [])]
 
         issues.append({
-            "text": title + " " + description,
+            "text": (title or "") + " " + (description or ""),
             "labels": labels
         })
 

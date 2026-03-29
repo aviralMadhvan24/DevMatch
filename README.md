@@ -166,7 +166,7 @@ authProvider          → AuthState (loading/authenticated/unauthenticated)
 issuesProvider        → AsyncValue<List<GithubIssue>>
 savedIssuesProvider   → AsyncValue<List<GithubIssue>>
 selectedIssueProvider → GithubIssue?
-contributionGuideProvider(issueId) → FutureProvider<String>
+contributionGuideProvider(issue) → FutureProvider<String>
 ```
 
 ### API Services

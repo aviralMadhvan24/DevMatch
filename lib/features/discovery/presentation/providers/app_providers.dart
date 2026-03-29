@@ -104,9 +104,8 @@ class IssuesNotifier extends StateNotifier<AsyncValue<List<GithubIssue>>> {
       state = const AsyncValue.loading();
     }
     try {
-      // Use mock data for demo
-      await Future.delayed(const Duration(milliseconds: 800));
-      state = AsyncValue.data(MockData.sampleIssues);
+      final issues = await _service.getRecommendations(page: _page);
+      state = AsyncValue.data(issues);
     } catch (e, st) {
       state = AsyncValue.error(e, st);
     }
